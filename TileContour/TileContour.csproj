@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>vil.acad.TileContour</RootNamespace>
     <AssemblyName>TileContour</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,15 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2015\inc\AcCoreMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2015\inc\AcDbMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2015\inc\AcMgd.dll</HintPath>
+      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
