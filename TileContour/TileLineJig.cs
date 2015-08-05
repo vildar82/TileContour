@@ -55,7 +55,7 @@ namespace vil.acad.TileContour
          WorldGeometry geo = draw.Geometry;
          if (geo != null)
          {
-            geo.PushModelTransform(UCS);
+            geo.PushModelTransform(UCS); // Не очень понятно, что это.
 
             if (_allVertex.Count != 0)
             {
@@ -78,7 +78,7 @@ namespace vil.acad.TileContour
                // Отрисовка полилинии.
                geo.Polyline(tempAllVertex, Vector3d.ZAxis, IntPtr.Zero);
             }
-            geo.PopModelTransform();
+            geo.PopModelTransform(); // Что это?
          }
          return true;
       }
@@ -105,7 +105,7 @@ namespace vil.acad.TileContour
          }
          else
          {
-            _lastVertex = prRes.Value;
+            _lastVertex = prRes.Value.TransformBy(UCS.Inverse());
          }
          return SamplerStatus.OK;
       }
