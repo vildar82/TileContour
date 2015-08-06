@@ -86,10 +86,14 @@ namespace vil.acad.TileContour
       protected override SamplerStatus Sampler(JigPrompts prompts)
       {
          JigPromptPointOptions prOpt = new JigPromptPointOptions("\nУкажите точку");
-         prOpt.Keywords.Add("Tile" + Options.LenTile, "Плитка" + Options.LenTile);
-         prOpt.Keywords.Add("Seam" + Options.LenSeam,"Шов" + Options.LenSeam);
-         //prOpt.AppendKeywordsToMessage = true;
+         prOpt.Keywords.Add("Плитка" + Options.LenTile);
+         prOpt.Keywords.Add("Шов" + Options.LenSeam);
          prOpt.UserInputControls = UserInputControls.AcceptOtherInputString;
+         if (_allVertex.Count>0)
+         {
+            prOpt.BasePoint = _allVertex[_allVertex.Count - 1];
+            prOpt.UseBasePoint = true;
+         }
 
          PromptPointResult prRes = prompts.AcquirePoint(prOpt);
          if (prRes.Status == PromptStatus.Error || prRes.Status == PromptStatus.Cancel)
