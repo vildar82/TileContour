@@ -31,16 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AcadLib">
+      <HintPath>..\..\..\AcadLib\AcadLib\bin\Release\AcadLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcCoreMgd.dll</HintPath>
+      <HintPath>..\..\..\ObjectARX\ObjectARX2016\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcDbMgd.dll</HintPath>
+      <HintPath>..\..\..\ObjectARX\ObjectARX2016\inc\AcDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMgd">
-      <HintPath>..\..\..\..\ObjectARX\ObjectARX2013\inc\AcMgd.dll</HintPath>
+      <HintPath>..\..\..\ObjectARX\ObjectARX2016\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
